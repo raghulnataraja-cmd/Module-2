@@ -9,8 +9,16 @@ To write a Python program to convert the number **16** into its **binary represe
 3. Print the result.
 
 ## 🧾 Program
-
-Add Code Here
+    num = int(input("ENTER A NUMBER :"))
+    temp = num
+    rev = 0
+    while temp > 0:
+      rev = (10 * rev) + temp % 10
+      temp = temp // 10
+    if rev == num :
+      print(f"The given number {num} is Palindrome")
+    else:
+      print(f"The given number {num} is not Palindrome")
 
 ## Output
 
